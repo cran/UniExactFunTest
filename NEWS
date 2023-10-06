@@ -1,0 +1,20 @@
+## NEWS
+================
+## Version 1.0.0
+  2023-09-13
+  Rename the package, simplify the function.
+
+  2023-09-09
+
+  Complete the UEFT and UEFTC methods
+
+## Version 0.0.1
+
+  2022-06-23
+
+  1. Created NEWS.md file.
+  2. Created the tests folder in testthat version 3.0.
+  3. Created the vignettes folder.
+  4. Updated the DESCRIPTION file.
+
+  2022-06-21. Package version 0.0.0 created.

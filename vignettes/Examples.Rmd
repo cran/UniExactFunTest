@@ -1,0 +1,117 @@
+---
+title: "Examples"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Examples}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r}
+library(UniExactFunTest)
+```
+
+
+```{r test, include=FALSE, eval=TRUE}
+xs <- 
+  list(
+    matrix(c(
+      0, 5,
+      5, 0
+    ), nrow=2, byrow=TRUE),
+    matrix(c(
+      0, 5,
+      3, 5
+    ), nrow=2, byrow=TRUE),
+    matrix(c(
+      0, 5,
+      12, 3
+    ), nrow=2, byrow=TRUE)
+  )
+
+for(x in xs) {
+  print(knitr::kable(x))
+  UEFT(x)
+  UEFT(t(x))
+
+}
+```
+
+## Ice cream and food-borne disease
+
+Data source: Stephanie Glen. "Contingency Table: What is it used for?" From StatisticsHowTo.com: Elementary Statistics for the rest of us! https://www.statisticshowto.com/what-is-a-contingency-table/
+
+```{r ice cream}
+x <- matrix(c(
+  13, 32,
+  17, 23
+), nrow=2, byrow=TRUE,
+dimnames = list(
+  c("Ice cream eaten", "No ice cream"),
+  c("Cases", "Controls")
+))
+knitr::kable(x)
+UEFT(x)
+UEFT(t(x))
+
+```
+
+## AIDS and sexual preference
+
+Data source: Stephanie Glen. "Contingency Table: What is it used for?" From StatisticsHowTo.com: Elementary Statistics for the rest of us! https://www.statisticshowto.com/what-is-a-contingency-table/
+
+```{r AIDS}
+x <- matrix(
+  c(4,2,3,3,16,2), nrow=2, ncol=3, byrow=TRUE,
+  dimnames=list(
+              c("AIDS: yes", "AIDS: no"),
+              c("Males", "Females", "Both")
+))
+knitr::kable(x)
+UEFT(x)
+UEFT(t(x))
+```
+
+## Cancer therapy
+
+Data source: Mendenhall, W. M., Million, R. R., Sharkey, D. E., & Cassisi, N. J. (1984). Stage T3 squamous cell carcinoma of the glottic larynx treated with surgery and/or radiation therapy. International journal of radiation oncology, biology, physics, 10(3), 357–363. https://doi.org/10.1016/0360-3016(84)90054-3
+
+```{r Mendenhall et al. 1984}
+x <- matrix(c(
+  21, 2,
+  15, 3
+), nrow=2, byrow=TRUE,
+dimnames = list(
+  c("Surgery", "Radiation therapy"),
+  c("Cancer controlled", "Cancer not controlled")
+))
+knitr::kable(x)
+UEFT(x)
+UEFT(t(x))
+```
+
+
+## Sex and handedness
+
+Data source: https://en.wikipedia.org/wiki/Contingency_table
+
+```{r sex-handedness}
+x <- matrix(c(
+  43, 9,
+  44, 4
+), nrow=2, byrow=TRUE,
+dimnames = list(
+  c("Male", "Female"),
+  c("Right-handed", "Left-handed")
+))
+knitr::kable(x)
+UEFT(x)
+UEFT(t(x))
+```
