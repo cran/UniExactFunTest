@@ -1,8 +1,8 @@
 Package: UniExactFunTest
 Type: Package
 Title: Uniform Exact Functional Tests for Contingency Tables
-Version: 1.0.0
-Date: 2023-09-27
+Version: 1.0.1
+Date: 2025-02-20
 Authors@R: c(
  person(
  "Yiyi", "Li", role = c("aut", "cre"), 
@@ -28,8 +28,8 @@ Depends: R (>= 3.5.0), stats
 Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
 VignetteBuilder: knitr
 Config/testthat/edition: 3
-RoxygenNote: 7.2.3
+RoxygenNote: 7.3.2
 NeedsCompilation: yes
-Packaged: 2023-10-05 21:36:49 UTC; yili
+Packaged: 2025-02-21 06:36:22 UTC; gtarex
 Repository: CRAN
-Date/Publication: 2023-10-06 16:20:09 UTC
+Date/Publication: 2025-02-21 07:00:02 UTC

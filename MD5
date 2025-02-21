@@ -1,13 +1,13 @@
-9ecdb9a53f0ce89d8bcb9d0297ca6c17 *DESCRIPTION
+bc9c2f0b3ef694f3fa15a75c28201440 *DESCRIPTION
 9096034fd65eb1b9b5f953b6d65b039f *NAMESPACE
-e4d19bf76a5ee741924aa4c3b145367a *NEWS
+48f58d6288138745a6e28b44a7a332c1 *NEWS
 2f1f34e620105e64eebc81d260530ee8 *R/RcppExports.R
-811aaf1814771a3d4d22bb7a7edebaeb *R/UEFT.R
-bdf50216cd898152efc722f6d3e7da14 *build/vignette.rds
-8172b3696d1892ddf2e5ebc9d890cb3a *inst/doc/Examples.R
+2d162f2ef03176d414338e19b841e74a *R/UEFT.R
+3b2765904089b341f76adadc40f7d3ec *build/vignette.rds
+11e68dc507053401fde97ab5061f8b7d *inst/doc/Examples.R
 4d7a9bc84d3f5c190eeb4f9755a90bf1 *inst/doc/Examples.Rmd
-05b62f24099bcd33d0d4d7ce3a745486 *inst/doc/Examples.html
-4eb418efddf9cecb3d9e52560e8ac0cf *man/UEFT.Rd
+1604cee1c1c4dddad0b6b5c87a1753ea *inst/doc/Examples.html
+1c82f844f4175751d4bd7b17433a45db *man/UEFT.Rd
 30aee486291ef6d8ef08a8ce859efb28 *src/RcppExports.cpp
 abe8286685c37b259132c8eb52740c3d *src/UEFT.cpp
 6d982c0850fcb41a1f18523598669b85 *src/UEFT.h
@@ -20,5 +20,4 @@ a12979213e7c964d6f513fc4b80caf19 *src/fastEnuNode.cpp
 245885585221ce8252bc3d68305a2ba8 *src/matrixTools.h
 68429da00b008657f239c301e70a2301 *tests/testthat.R
 b4b8330b247aeda30c87a5846e80d69f *tests/testthat/test_EFT.R
-4d96158151241eec7a758479df893431 *tests/testthat/testthat-problems.rds
 4d7a9bc84d3f5c190eeb4f9755a90bf1 *vignettes/Examples.Rmd

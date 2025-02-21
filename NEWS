@@ -1,5 +1,14 @@
 ## NEWS
 ================
+## Version 1.0.1
+  2025-02-20
+  Fixed the error when input invalid input
+  Correct the estimate value
+
+  2024-10-31
+  Adding the example to the function description.
+  Adding estimate of UEFC method
+
 ## Version 1.0.0
   2023-09-13
   Rename the package, simplify the function.

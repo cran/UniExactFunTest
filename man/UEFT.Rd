@@ -24,8 +24,23 @@ column variable is a function of the row variable.
 }
 \details{
 The uniform idea was implementated using uniform marginal distribution of a square table as null hypothesis.
-The continuity correction algorithm
+}
+\note{
+The functions provide a direct entry into the C++ implementations of the exact functional test.
+}
+\examples{
+ # Initial a table
+ x = matrix(c(0,5,10,0,0,5), ncol=3)
+ # With continuity correction
+ UEFT(x)
+ # Without continuity correction
+ UEFT(x, FALSE)
 }
 \author{
 Yiyi Li, Joe Song
 }
+\keyword{exact}
+\keyword{functional}
+\keyword{nonparametric}
+\keyword{test}
+\keyword{uniform}
